@@ -27,7 +27,7 @@ main {
 
 #timer {
   font-size: 3.5rem;
-  color: #ee8714;
+  color: #ee980c;
 }
 
 #end {
@@ -35,13 +35,19 @@ main {
 }
 
 #end__time {
-  color: #36f;
+  font-weight: 700;
 }
 
 #time-input {
   padding: 5px 8px;
   border: none;
   border-bottom: 1px solid #000;
+}
+
+#time-input:disabled {
+  background: #fff;
+  text-align: center;
+  border: none;
 }
 
 #time-input:focus {
@@ -65,8 +71,12 @@ main {
   transform: scale(0.9);
 }
 
-#buttons__end {
+#buttons__start:disabled, #buttons__end:disabled {
   background: #ccc;
+}
+
+#buttons__end {
+  background: #f55;
 }
 
 .invalid {

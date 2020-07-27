@@ -58,22 +58,16 @@ const validateCountdown = (startBtn, endBtn, timeInput) => {
 // animate start button
 const animateStartBtn = (btn1, btn2, input) => {
   btn1.disabled = true;
-  btn1.style.backgroundColor = '#ccc';
   btn2.disabled = false;
-  btn2.style.backgroundColor = '#f55';
   input.disabled = true;
-  input.style.backgroundColor = '#eee';
   input.placeholder = 'Have a good break!'
 }
 
 // animate end button
 const animateEndBtn = (btn1, btn2, input) => {
   btn1.disabled = false;
-  btn1.style.backgroundColor = '#00A676';
   btn2.disabled = true;
-  btn2.style.backgroundColor = '#ccc';
   input.disabled = false;
-  input.style.backgroundColor = '#fff';
   input.placeholder = 'Enter time in minutes';
 }
 
