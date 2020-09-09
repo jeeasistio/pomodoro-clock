@@ -8,8 +8,8 @@ let countdown;
 
 // display output
 const displayOutput = (timerText, num) => {
-  mins = `${Math.floor(num / 60)}`.padStart(2, '0');
-  sec = `${Math.floor(num % 60)}`.padStart(2, '0');
+  const mins = `${Math.floor(num / 60)}`.padStart(2, '0');
+  const sec = `${Math.floor(num % 60)}`.padStart(2, '0');
   timerText.textContent = `${mins}:${sec}`;
 }
 
